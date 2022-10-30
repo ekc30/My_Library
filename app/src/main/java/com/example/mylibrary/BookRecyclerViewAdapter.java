@@ -113,7 +113,8 @@ public class BookRecyclerViewAdapter extends RecyclerView.Adapter<BookRecyclerVi
                         builder.create().show();
                     }
                 });
-            } // make delete button visible and set onClickListener if parentActivity is AlreadyReadBooksActivity
+            }
+            // make delete button visible and set onClickListener if parentActivity is AlreadyReadBooksActivity
             else if(parentActivity.equals("alreadyRead")) {
                 holder.btnDelete.setVisibility(View.VISIBLE);
                 holder.btnDelete.setOnClickListener(new View.OnClickListener() {
